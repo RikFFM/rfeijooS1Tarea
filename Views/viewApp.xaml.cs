@@ -13,7 +13,7 @@ public partial class viewApp : ContentPage
 		string last = txtLastName.Text;
 		string age = nmbAge.Text;
 		double salary = Convert.ToInt32(nmbsalary.Text);
-		DisplayAlert("alert", "Bienvenido: " + name + " " + last + "\nTienes: " + age + "\nTu aporte mensual es: " + calculateIess(salary) + "años", "OK");
+		DisplayAlert("alert", "Bienvenido: " + name + " " + last + "\nTienes: " + age + " años" + "\nTu aporte mensual es: " + calculateIess(salary), "OK");
 
     }
 
