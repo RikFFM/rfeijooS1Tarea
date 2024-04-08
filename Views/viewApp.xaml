@@ -5,8 +5,33 @@
              Title="viewApp">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Calculadora de Aporte al IESS"
+            FontAttributes="Bold"
+            TextColor="White"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry 
+            x:Name="txtName"
+            Placeholder="Enter your name"
+            ></Entry>
+        <Entry
+            x:Name="txtLastName"
+            Placeholder="Enter your last name"
+            ></Entry>
+        <Entry
+            x:Name="nmbAge"
+            Placeholder="Enter your age"
+            Keyboard="Numeric"></Entry>
+        <Entry
+          x:Name="nmbsalary"
+        Placeholder="Enter your salary"
+            Keyboard="Numeric"></Entry>
+
+
+        <Button
+            x:Name="btnAction"
+            Text="Calculate"
+            Clicked="btnAction_Clicked"></Button>
     </VerticalStackLayout>
 </ContentPage>
